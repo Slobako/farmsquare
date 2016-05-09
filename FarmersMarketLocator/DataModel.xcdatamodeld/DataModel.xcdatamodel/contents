@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="FMLGroceryItem" representedClassName="FMLGroceryItem" syncable="YES">
+        <attribute name="isChecked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FMLGroceryList" inverseName="itemsInList" inverseEntity="FMLGroceryList" syncable="YES"/>
+    </entity>
+    <entity name="FMLGroceryList" representedClassName="FMLGroceryList" syncable="YES">
+        <attribute name="dateModified" optional="YES" attributeType="Date" minDateTimeInterval="482616060" syncable="YES"/>
+        <attribute name="listName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfItems" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="itemsInList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FMLGroceryItem" inverseName="list" inverseEntity="FMLGroceryItem" syncable="YES"/>
+    </entity>
+    <entity name="FMLMarket" representedClassName="FMLMarket" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credit" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="facebook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleMapLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organic" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="produceList" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season1Date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season1Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season2Date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season2Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season3Date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season3Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season4Date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="season4Time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sfmnp" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="snap" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wic" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="wicCash" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FMLGroceryItem" positionX="-63" positionY="36" width="128" height="105"/>
+        <element name="FMLGroceryList" positionX="-63" positionY="36" width="128" height="120"/>
+        <element name="FMLMarket" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>
